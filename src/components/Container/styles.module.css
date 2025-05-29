@@ -1,0 +1,15 @@
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+
+.content{
+    margin: 3.2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+

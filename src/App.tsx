@@ -1,19 +1,53 @@
 import "./styles/global.css";
 import "./styles/theme.css";
-import { Heading } from "./components/Heading";
+
+import { Container } from "./components/Container";
+import { Logo } from "./components/Logo";
+import { Menu } from "./components/Menu";
+import { CountDown } from "./components/CountDown";
+import { PlayIcon } from "lucide-react";
+import { DefaultInput } from "./components/DefaultInput";
+
 
 function App() {
   return (
     <>
-      <Heading attr={123} attr2="string">
-        Olá mundo! 1
-      </Heading>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-        impedit ullam non fugiat. Eius ratione delectus laborum quae itaque
-        quasi doloremque alias laboriosam nobis, quia minima explicabo similique
-        qui possimus!
-      </p>
+      <Container>
+        <Logo/>
+      </Container>
+
+      <Container>
+        <Menu/>
+      </Container>
+      
+      <Container>
+        <CountDown/>
+      </Container>
+
+      <Container>
+       <form className="form" action="">
+        <div className="formRow">
+          <DefaultInput labelText="tesk" id="meuInput" type="text" required/>
+        </div>
+
+        <div className="formRow">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Ciclos</p>
+        </div>
+
+        <div className="formRow">
+          <p>0 0 0 0 0 0 0 0</p>
+        </div>
+
+        <div className="formRow">
+          <button>
+            <PlayIcon/>
+          </button>
+        </div>
+
+       </form>
+      </Container>
+
     </>
   );
 }
