@@ -1,0 +1,18 @@
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2.9rem;
+    margin: 2rem 0;
+}
+
+.rodape a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-muted);
+}
+.rodape a:hover{
+    color: var(--text-muted);
+    text-decoration:underline;
+}
